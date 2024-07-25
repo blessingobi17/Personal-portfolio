@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBJ Portfolio</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5f1e38c4b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "rgb(26, 25, 25)",
+              yellow: "#ffc107",
+              veryDarkGrey: "#ffffff1a",
+              lightYellow: "rgba(255,193,7,0.8)",
+            },
+            fontSize: {
+              lgHero: "200px",
+            },
+            letterSpacing: {
+              heroSpacing: "1rem",
+            },
+            height: {
+              navList: "70vh",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="w-full text-white">
+      <nav
+        class="navbar flex w-full justify-between itesm-center lg:px-24 px-8 lg:py-6 py-8"
+      >
+        <a href="">
+          <p class="logo text-2xl font-bold">O B J.</p>
+        </a>
+
+        <div
+          class="nav-list lg:block hidden lg:relative lg:top-0 left-0 absolute top-24 lg:w-auto lg:h-auto h-navList w-full lg:bg-transparent bg-background"
+        >
+          <ul
+            class="flex lg:flex-row flex-col lg:gap-6 gap-10 justify-between lg:py-0 py-6 lg:px-0 px-8"
+          >
+            <a href="#hero" class="relative navLink" id="homeLink"
+              ><li>Home</li></a
+            >
+            <a href="#about" class="relative navLink"><li>About</li></a>
+            <a href="#services" class="relative navLink"><li>Services</li></a>
+            <a href="#projects" class="relative navLink"><li>Projects</li></a>
+            <a href="#contact" class="relative navLink"><li>Contact</li></a>
+          </ul>
+        </div>
+        <button class="lg:hidden block hamburger">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+        <button class="hidden cancel">
+          <i class="fa-solid fa-xmark fa-lg"></i>
+        </button>
+      </nav>
+      <section class="hero text-center w-full pt-40 pb-20 font-light" id="hero">
+        <h1 class="md:text-lgHero tracking-heroSpacing text-8xl">OBJ.</h1>
+        <p class="text-xl">Web Developer & UI/UX Designer</p>
+      </section>
+    </header>
+    <main class="w-full lg:px-24 px-8">
+      <section class="py-20" id="about">
+        <h1 class="md:text-8xl text-7xl">About</h1>
+        <h2 class="md:text-3xl text-2xl tracking-widest pb-8 font-bold">
+          Let me introduce myself.
+        </h2>
+        <p class="font-light text-md leading-loose">
+          <span class="tracking-widest font-bold">HELLO! </span>, I'm Obi
+          Blessing, a passionate frontend engineer and product designer who is a
+          creative problem solver with a knack for crafting seamless user
+          experiences and a deep understanding of design principles. Driven by a
+          relentless pursuit of innovation, I thrive in collaborative
+          environments where I can brainstorm ideas, iterate quickly, and turn
+          visions into reality. Whether it's creating responsive web
+          applications or refining user interfaces, I'm committed to delivering
+          solutions that exceed expectations. Let's connect and explore how we
+          can collaborate to elevate your next project!
+        </p>
+        <button
+          class="px-8 py-2 rounded-full text-black font-semibold text-sm mt-4 outline-none"
+        >
+          Download CV
+        </button>
+      </section>
+      <section class="py-20" id="services">
+        <div class="servicesHeader">
+          <h1 class="md:text-8xl text-7xl text-center">Services</h1>
+          <h2
+            class="md:text-3xl text-2xl tracking-widest pb-14 font-bold text-center"
+          >
+            He's what i can do for you.
+          </h2>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+          <div
+            class="card bg-veryDarkGrey px-10 py-14 hover:bg-yellow transition duration-500 ease-in-out hover:text-black"
+          >
+            <h3 class="text-yellow text-2xl font-light pb-4">
+              Front-end Development
+            </h3>
+            <p class="text-md leading-loose">
+              Writing clean, efficient, and maintainable code using HTML, CSS,
+              JavaScript, and frameworks like Tailwind and React.
+            </p>
+          </div>
+          <div
+            class="card bg-veryDarkGrey px-10 py-14 hover:bg-yellow transition duration-500 ease-in-out hover:text-black"
+          >
+            <h3 class="text-yellow text-2xl font-light pb-4">
+              Interactive Animations
+            </h3>
+            <p class="text-md leading-loose">
+              Adding dynamic elements to improve the user experience using CSS
+              animations, JavaScript, or libraries like Framer motion.
+            </p>
+          </div>
+          <div
+            class="card bg-veryDarkGrey px-10 py-14 hover:bg-yellow transition duration-500 ease-in-out hover:text-black"
+          >
+            <h3 class="text-yellow text-2xl font-light pb-4">
+              Responsive Web Design
+            </h3>
+            <p class="text-md leading-loose">
+              Creating mobile-friendly websites that work seamlessly across all
+              devices.
+            </p>
+          </div>
+          <div
+            class="card bg-veryDarkGrey px-10 py-14 hover:bg-yellow transition duration-500 ease-in-out hover:text-black"
+          >
+            <h3 class="text-yellow text-2xl font-light pb-4">
+              User Interface (UI) Design
+            </h3>
+            <p class="text-md leading-loose">
+              Creating visually appealing and user-friendly interfaces that
+              enhance the overall user experience.
+            </p>
+          </div>
+          <div
+            class="card bg-veryDarkGrey px-10 py-14 hover:bg-yellow transition duration-500 ease-in-out hover:text-black"
+          >
+            <h3 class="text-yellow text-2xl font-light pb-4">
+              User Experience (UX) Design
+            </h3>
+            <p class="text-md leading-loose">
+              Enhancing user satisfaction by improving the usability,
+              accessibility, and pleasure provided in the interaction with the
+              product.
+            </p>
+          </div>
+          <div
+            class="card bg-veryDarkGrey px-10 py-14 hover:bg-yellow transition duration-500 ease-in-out hover:text-black"
+          >
+            <h3 class="text-yellow text-2xl font-light pb-4">
+              Prototyping and Wireframing
+            </h3>
+            <p class="text-md leading-loose">
+              Developing interactive prototypes and wireframes to visualize and
+              test design concepts.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 w-full" id="projects">
+        <div class="projectsHeader">
+          <h1 class="md:text-8xl text-7xl text-center">Projects</h1>
+          <h2
+            class="md:text-3xl text-2xl tracking-widest pb-14 font-bold text-center"
+          >
+            Check out some of my works.
+          </h2>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 relative w-full">
+          <div class="relative projectImg w-full">
+            <img src="images/project-1.jpg" alt="" class="h-80 w-full" />
+            <div
+              class="overlay opacity-0 bg-lightYellow absolute top-0 h-80 flex w-full items-center justify-center transition duration-500 ease-in-out"
+            >
+              <p class="text-2xl font-light">Web design</p>
+            </div>
+          </div>
+          <div class="relative projectImg w-full lg:col-span-2 col-auto">
+            <img
+              src="images/project-5.jpg"
+              alt=""
+              class="h-80 object-cover w-full"
+            />
+            <div
+              class="overlay opacity-0 bg-lightYellow absolute top-0 h-80 flex w-full items-center justify-center transition duration-500 ease-in-out"
+            >
+              <p class="text-2xl font-light">Web design</p>
+            </div>
+          </div>
+          <div class="relative projectImg w-full lg:col-span-2 col-auto">
+            <img src="images/project-3.jpg" alt="" class="h-80 w-full" />
+            <div
+              class="overlay opacity-0 bg-lightYellow absolute top-0 h-80 flex w-full items-center justify-center transition duration-500 ease-in-out"
+            >
+              <p class="text-2xl font-light">Web design</p>
+            </div>
+          </div>
+          <div class="relative projectImg w-full">
+            <img src="images/project-4.jpg" alt="" class="h-80 w-full" />
+            <div
+              class="overlay opacity-0 bg-lightYellow absolute top-0 h-80 flex w-full items-center justify-center transition duration-500 ease-in-out"
+            >
+              <p class="text-2xl font-light">UI/UX Design</p>
+            </div>
+          </div>
+          <div class="relative projectImg">
+            <img src="images/project-2.jpg" alt="" class="h-80 w-full" />
+            <div
+              class="overlay opacity-0 bg-lightYellow absolute top-0 h-80 flex w-full items-center justify-center transition duration-500 ease-in-out"
+            >
+              <p class="text-2xl font-light">UI/UX Design</p>
+            </div>
+          </div>
+          <div class="relative projectImg w-full lg:col-span-2 col-auto">
+            <img
+              src="images/project-6.jpg"
+              alt=""
+              class="h-80 object-cover w-full"
+            />
+            <div
+              class="overlay opacity-0 bg-lightYellow absolute top-0 h-80 flex w-full items-center justify-center transition duration-500 ease-in-out"
+            >
+              <p class="text-2xl font-light">UI/UX Design</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20" id="contact">
+        <div class="contactHeader">
+          <h1 class="md:text-8xl text-7xl text-center">Contact</h1>
+          <h2
+            class="md:text-3xl text-2xl tracking-widest pb-14 font-bold text-center"
+          >
+            I'd love to hear from you.
+          </h2>
+        </div>
+        <div
+          class="flex lg:flex-row flex-col justify-between items-center w-full contactDetails"
+        >
+          <form name="form" class="lg:w-1/2 w-full flex flex-col font-light">
+            <label class="pb-4">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="mb-8 bg-transparent border-b outline-none"
+            />
+            <label class="pb-4">Email</label>
+            <input
+              type="text"
+              name="email"
+              class="mb-8 bg-transparent border-b outline-none"
+            />
+            <label class="pb-4">Message</label>
+            <textarea
+              name="message"
+              class="mb-10 pb-14 border-b outline-none bg-transparent"
+            ></textarea>
+            <button
+              class="bg-yellow text-black w-1/2 py-2 font-semibold m-auto"
+            >
+              <input type="submit" value="Submit" />
+            </button>
+          </form>
+          <div class="lg:w-2/5 md:w-3/5 w-full flex flex-col items-center">
+            <div
+              class="flex md:flex-row flex-col justify-between w-full lg:mt-0 mt-24"
+            >
+              <div class="flex flex-col items-center mb-10">
+                <div
+                  class="bg-veryDarkGrey rounded-full h-20 w-20 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-paper-plane fa-lg text-yellow"></i>
+                </div>
+                <p class="pt-4 tracking-widest">Bjoseph863@gmail.com</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <div
+                  class="bg-veryDarkGrey rounded-full h-20 w-20 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-phone fa-lg text-yellow"></i>
+                </div>
+                <p class="pt-4 tracking-widest">+2348167737064</p>
+              </div>
+            </div>
+            <button class="flex gap-8 text-yellow lg:mt-8 mt-14">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/animation.js"></script>
+  </body>
+</html>

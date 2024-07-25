@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --background: rgb(26, 25, 25);
+  --white: rgb(255, 255, 255);
+  --darkGrey: rgb(167, 161, 161);
+  --veryDarkGrey: #ffffff1a;
+  --yellow: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white);
+  scroll-behavior: smooth;
+}
+
+.logo {
+  font-family: "League Spartan", sans-serif;
+}
+
+.navbar {
+  background: var(--background);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.5s;
+}
+
+.scrolled {
+  background: var(--background);
+}
+
+.navLink {
+  padding-bottom: 10px;
+}
+
+.navLink.active {
+  color: var(--yellow);
+}
+
+.navLink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--yellow);
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+@keyframes heroEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#hero {
+  animation: heroEffect 1s ease-in;
+}
+
+#about {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  h1 {
+    color: var(--darkGrey);
+    filter: brightness(30%);
+    font-family: "League Spartan", sans-serif;
+  }
+
+  h2 {
+    font-family: "League Spartan", sans-serif;
+  }
+
+  span {
+    color: var(--yellow);
+  }
+
+  button {
+    background: var(--yellow);
+  }
+}
+
+#about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#services {
+  h1 {
+    color: var(--darkGrey);
+    filter: brightness(30%);
+    font-family: "League Spartan", sans-serif;
+  }
+
+  h2 {
+    font-family: "League Spartan", sans-serif;
+  }
+
+  .servicesHeader {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .card {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  .card:hover h3 {
+    color: var(--white);
+  }
+
+  .servicesHeader.visible,
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#projects,
+#contact {
+  h1 {
+    color: var(--darkGrey);
+    filter: brightness(30%);
+    font-family: "League Spartan", sans-serif;
+  }
+
+  h2 {
+    font-family: "League Spartan", sans-serif;
+  }
+}
+
+.projectsHeader,
+.projectImg,
+.contactHeader,
+.contactDetails {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.projectImg:hover .overlay {
+  opacity: 1;
+}
+
+.projectsHeader.visible,
+.projectImg.visible,
+.contactHeader.visible,
+.contactDetails.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+form {
+  font-family: "Josefin Sans", sans-serif;
+}
